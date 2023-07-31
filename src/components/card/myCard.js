@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./myCard.css"
+import "./myCard.css";
 import { Card } from "react-bootstrap";
 import Fetch from "../../Hooks/Fetch";
 import Type from "./Type/Type";
@@ -30,9 +30,14 @@ const MyCard = () => {
             key={item.name}
           >
             <Fetch name={item.name} />
-            <div id="info" className="d-flex align-items-center justify-content-center flex-column">
+            <div
+              id="info"
+              className="d-flex align-items-center justify-content-center flex-column"
+            >
               <Card.Title>{item.name}</Card.Title>
-              <Type />
+              <div className="d-flex align-items-center justify-content-center gap-1">
+                <Type name={item.name} />
+              </div>
             </div>
           </Card>
         ))}
