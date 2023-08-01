@@ -20,7 +20,7 @@ const Type = ({ name }) => {
     <>
       {tipo &&
         tipo.map((i) => (
-          <div id="type" key={i.type.name}>
+          <div className={i.type.name} id="type" key={i.type.name}>
             {i.type.name}
           </div>
         ))}
