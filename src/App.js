@@ -1,8 +1,7 @@
 import "./App.css";
 import Menu from "./components/menu/Menu";
-import Main from "./components/main/Main";
-
-
+import Main
+ from "./components/main/Main";
 function App() {
   return (
     <div className="App">
