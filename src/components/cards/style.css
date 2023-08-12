@@ -5,15 +5,20 @@
   top: -35px;
 }
 
-.grass {
-  background-color: green;
+#id {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: #fff;
 }
 
-.dark {
-  background-color: black;
-  color: white;
+#title {
+  text-transform: capitalize;
 }
 
-.fire {
-  background-color: orangered;
-}
